@@ -11,6 +11,7 @@ body {
 /* /////////////// CARTE /////////////// */
 #etoiles {
     position: fixed;
+    width: 100vw;
 }
 
 #etoiles_petites {
@@ -114,12 +115,20 @@ h1 {
     position: fixed;
     top: 9.3vw;
     left: 1.2vw;
-    height: 2vw;
+    width: 3.5vw;
+    height: 3vw;
     border-radius: 10px;
     border: 2px solid white;
-    padding: 1vw;
+    text-align: center;
+    padding-top: 0.5vw;
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
+}
+
+#suivant_europe:hover {
+    background-color: white;
+    cursor: pointer;
+    color: rgb(0, 0, 30);
 }
 
 /* ///////////////////////////////////// */
