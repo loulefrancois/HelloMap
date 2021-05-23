@@ -13,8 +13,16 @@ body {
     position: fixed;
 }
 
-#etoiles .cls-1 {
+#etoiles_petites {
     font-size: 5px;
+}
+
+#etoiles_moyennes {
+    font-size: 6px;
+}
+
+#etoiles_grandes {
+    font-size: 8px;
 }
 
 /* //////////////// IMG //////////////// */
