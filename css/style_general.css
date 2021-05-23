@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/* ///////////////////////////////////// */
+/* /////////////// FONTS /////////////// */
+/* ///////////////////////////////////// */
+
+/* ///////////////////////////////////// */
+/* /////////////// HEADER ////////////// */
+/* ///////////////////////////////////// */
+header {
+    position: fixed;
+    z-index: 10000;
+    font-size: 1.4vw;
+}
+
+header li {
+    list-style: none;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+nav {
+    border-bottom: 1px solid;
+    width: 100vw;
+    height: 2vw;
+    padding: 0.3vw 0.3vw 0 0.3vw;
+    background-color: white;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+
+}
+
+nav a {
+    display: block;
+
+}
+
+.sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    width: 23vw;
+    margin: 0.15vw 0 0 0;
+    padding: 1vw;
+    border: 1px solid;
+}
+
+.sous li {
+    width: 3.5vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li:not(#besoins_choix li) {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+#identite_choix {
+    width: 2vw;
+}
+
+#identite_choix li:hover,
+#besoins_choix li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav_affichage {
+    display: none;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❌</text></svg>") 2 2, auto;
+}

@@ -1,0 +1,205 @@
+
+
+/* ///////////////////////////////////// */
+/* ////////////// GENERAL ////////////// */
+/* ///////////////////////////////////// */
+
+
+/* #carte {
+    position: fixed;
+    width: 50vw;
+    height: 35.35vw;
+    top: 7.32vw;
+    left: 0;
+}
+
+#routes_svg {
+    z-index: -2;
+    width: 50vw;
+}
+
+.clipped {
+    position: relative;
+    top: -42.9vw;
+} */
+
+#carte {
+    position: fixed;
+    width: 300vw;
+    height: 212.1vw;
+    top: -110vw;
+    left: -110vw;
+    border: 1px solid blue;
+}
+
+#routes_svg {
+    z-index: -2;
+    width: 100%;
+}
+
+.clipped {
+    position: relative;
+    top: -256.2vw;
+}
+
+/* #carte {
+    position: fixed;
+    width: 100vw;
+    height: 70.70vw;
+    top: -10vw;
+    left: -10vw;
+    border: 1px solid blue;
+}
+
+#routes_svg {
+    z-index: -2;
+    width: 100%;
+}
+
+.clipped {
+    position: relative;
+    top: -256.2vw;
+} */
+
+
+/* ///////////////////////////////////// */
+/* /////////////// CARTE /////////////// */
+/* ///////////////////////////////////// */
+
+.clipped {
+    width: 100%;
+    -webkit-clip-path: url(#path);
+    clip-path: url(#path);
+}
+
+/* ///////////////////////////////////// */
+/* /////////////// ROUTE /////////////// */
+/* ///////////////////////////////////// */
+
+#routes_svg {
+    stroke-width: 0.01vw;
+    fill: none;
+    stroke-linecap: round;
+}
+
+#n_chemin,
+#n_01,
+#n_02,
+#n_03,
+#b_01,
+#b_02,
+#b_03 {
+    fill: none;
+}
+
+#b_01,
+#b_02,
+#b_03 {
+    stroke: white;
+}
+
+#n_chemin,
+#n_01,
+#n_02,
+#n_03 {
+    stroke: black;
+}
+
+/* CHEMINS */
+#n_chemin {
+    stroke-width: 0.01vw;
+}
+
+/* 01 */
+#n_01 {
+    stroke-width: 0.05vw;
+}
+
+#b_01 {
+    stroke-width: 0.03vw;
+}
+
+/* 02 */
+#n_02 {
+    stroke-width: 0.07vw;
+}
+
+#b_02 {
+    stroke-width: 0.05vw;
+}
+
+/* 03 */
+#n_03 {
+    stroke-width: 0.1vw;
+}
+
+#b_03 {
+    stroke-width: 0.08vw;
+}
+
+
+/* ///////////////////////////////////// */
+/* /////////////// CACHE /////////////// */
+/* ///////////////////////////////////// */
+
+.medecin_dent,
+.repas {
+    r: 0.03;
+    display: none;
+}
+
+
+/* ///////////////////////////////////// */
+/* //////////// INFORMATIONS /////////// */
+/* ///////////////////////////////////// */
+
+#carte p {
+    position: absolute;
+    font-size: 1.8vw;
+}
+
+#carte p:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#croixPointTexte {
+    border: 10px solid none;
+    position: fixed;
+    top: 2.5vw;
+    left: 72vw;
+    z-index: 1000000;
+    display: none;
+    font-size: 3vw;
+    color: white;
+}
+
+#croixPointTexte:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#informations .point_texte {
+    display: none;
+    background-color: white;
+    border: 2px solid;
+    position: fixed;
+    width: 28vw;
+    height: 95vh;
+    top: 2.5vh;
+    right: 2.5vh;
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#informations .point_texte::-webkit-scrollbar {
+    display: none;
+}
+
+#informations img {
+    width: 28vw;
+    border-radius: 8px 8px 0px 0px;
+}

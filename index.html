@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<!-- WELCOME -->
+<!-- web design/web dev : Lou Lefrançois -->
+
+<html lang="fr">
+<meta charset="UTF-8" />
+
+<head>
+
+    <title>&#128075; &#128506; Hello Map !</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_general.css" />
+    <link rel="stylesheet" href="css/style_index.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#carte").draggable();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ///////////////////////////////////// -->
+    <!-- /////////////// HEADER ////////////// -->
+    <!-- ///////////////////////////////////// -->
+
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">&#128075; &#128506;</a>
+                </li>
+                <li>>>></li>
+                <li class="deroulant">Toulouse</li>
+                <li>>></li>
+                <li class="deroulant"><a href="#">&#129485;&zwj;&#9792;&#65039;</a>
+                    <ul class="sous" id="identite_choix">
+                        <li>&#129485;&zwj;&#9792;&#65039;</li>
+                        <li>&#129485;&zwj;&#9794;&#65039;</li>
+                        <li>&#128107;</li>
+                        <li>&#128106;</li>
+                    </ul>
+                </li>
+                <li>></li>
+                <li class="nav_affichage" id="repas">🍽</li>
+                <li class="nav_affichage" id="chien">🐕</li>
+                <li class="nav_affichage" id="bagagerie">🛅</li>
+                <li class="nav_affichage" id="telephone">📞</li>
+                <li class="nav_affichage" id="repas_chien">🍽<span class="">🐕</span></li>
+                <li class="nav_affichage" id="medecin">🧑‍⚕️</li>
+                <li class="nav_affichage" id="medecin_dent">🦷🧑‍⚕️</li>
+                <li class="nav_affichage" id="hopital">🏥</li>
+                <li class="nav_affichage" id="coiffeur">💇</li>
+                <li class="nav_affichage" id="vetement">👕</li>
+                <li class="nav_affichage" id="vetement_bebe">👶👕</li>
+                <li class="nav_affichage" id="douche">🚿</li>
+                <li><a href="#">➕</a>
+                    <ul class="sous" id="besoins_choix">
+                        <li id="plus_repas">🍽</li>
+                        <li id="plus_chien">🐕</li>
+                        <li id="plus_bagagerie">🛅</li>
+                        <li id="plus_telephone">📞</li>
+                        <li id="plus_repas_chien">🍽<span class="">🐕</span></li>
+                        <li id="plus_medecin">🧑‍⚕️</li>
+                        <li id="plus_medecin_dent">🦷🧑‍⚕️</li>
+                        <li id="plus_hopital">🏥</li>
+                        <li id="plus_coiffeur">💇</li>
+                        <li id="plus_vetement">👕</li>
+                        <li id="plus_vetement_bebe">👶👕</li>
+                        <li id="plus_douche">🚿</li>
+
+                    </ul>
+                </li>
+                <li style="float: right; padding-right: 15px;"><a href="#">&#128424;</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- ///////////////////////////////////// -->
+    <!-- /////////////// ROUTES ////////////// -->
+    <!-- ///////////////////////////////////// -->
+
+    <p id="croixPointTexte">
+        X
+    </p>
+
+    <div id="carte" style="display: block;">
+        <div id="routes_svg"></div>
+        <!-- ///////////////////////////////////// -->
+        <!-- ////////////// CARTE //////////////// -->
+        <!-- ///////////////////////////////////// -->
+
+        <img src="img/carte_petite_2.jpg" class="clipped" />
+
+        <!-- ///////////////////////////////////// -->
+        <!-- /////////////// CACHE /////////////// -->
+        <!-- ///////////////////////////////////// -->
+
+        <svg width="0" height="0">
+            <clipPath id="path" clipPathUnits="objectBoundingBox">
+                <!-- ////////////// DENTAIRE ///////////// -->
+                <circle class="medecin_dent" cx="0.425" cy="0.543" style="display: none;"/>
+                
+                <!-- /////////////// REPAS /////////////// -->
+                <circle class="repas" cx="0.447" cy="0.665" style="display: none;"/>
+
+                <!-- /////////////// REPAS /////////////// -->
+                <rect x="0.5" y="0.2" width="0.1" height="0.1" />
+            </clipPath>
+        </svg>
+
+        <!-- ///////////////////////////////////// -->
+        <!-- //////////// INFORMATIONS /////////// -->
+        <!-- ///////////////////////////////////// -->
+
+
+        <div id="informations">
+
+            <!-- ////////////// DENTAIRE ///////////// -->
+
+            <div class="point">
+
+                <p class="medecin_dent" style="left: 42%; top: 55.5%;">&#129463;</p>
+
+                <div class="point_texte">
+                    <img src="img/dentaire_1.png" />
+                    <h2>&#129463;
+                        <!--tooth--> &#127973;
+                        <!--hospital--> &#128104;&#8205;&#9877;&#65039;
+                        <!--medecin-->
+                    </h2>
+                </div>
+            </div>
+
+
+            <!-- /////////////// REPAS /////////////// -->
+
+            <div class="point">
+
+                <p class="repas" style="left: 44.5%; top: 73%;">&#127869;</p>
+
+                <div class="point_texte">
+                    <img src="img/repas_1.png" />
+                    <h2>
+                        <!--couvert-->
+                        &#127869;
+                        <!--aliments_emporter-->
+                        &#129377;
+                    </h2>
+                </div>
+            </div>
+
+            <!-- /////////////// REPAS /////////////// -->
+
+
+
+        </div>
+    </div>
+
+    <img src="img/carte_petite_2.jpg"
+        style="display: none; position: fixed; top: 0; left: 0; width: 50vw; z-index: -2; opacity: 0.4" />
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

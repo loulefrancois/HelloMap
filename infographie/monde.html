@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- WELCOME -->
+<!-- web design/web dev : Lou Lefrançois -->
+
+<html lang="fr">
+<meta charset="UTF-8" />
+
+<head>
+
+    <title>&#128075; &#128506; 🌍 Hello Map !</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style_info_monde.css" />
+    <link rel="stylesheet" href="../css/style_general.css" />
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">&#128075; &#128506;</a>
+                </li>
+                <li>></li>
+                <li class="deroulant">Infographie</li>
+                <li>></li>
+                <li class="deroulant">🌍 </li>
+                <li>></li>
+                <li class="deroulant">🇪🇺</li>
+                <li>></li>
+                <li class="deroulant">🇫🇷</li>
+                <li>></li>
+                <li class="deroulant">Toulouse</li>
+                <li>></li>
+
+                <li style="float: right; padding-right: 15px;"><a href="#">&#128424;</a></li>
+                <li style="float: right; padding-right: 15px;"><a href="#">&#8505;</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div id="etoiles"></div>
+
+
+
+    <svg width="0" height="0">
+        <clipPath id="path_monde_img_satellite" clipPathUnits="objectBoundingBox">
+            <circle cx="0.5" cy="0.5" r="0.5" id="circle" />
+        </clipPath>
+    </svg>
+    <img id="monde_img_satellite" src="../img/monde_satellite.jpg" />
+
+
+    <div id="infographie_monde"></div>
+
+    <div id="contenu">
+        <h1> Les dix premiers pays pour les premieres demandes d’asile en france - 2020</h1>
+    </div>
+</body>
+
+<script src="../js/infographie_monde.js"></script>
+
+</html>
