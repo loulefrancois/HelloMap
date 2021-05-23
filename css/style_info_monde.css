@@ -12,6 +12,7 @@ body {
 #etoiles {
     position: fixed;
     width: 100vw;
+    z-index: 1000000;
 }
 
 #etoiles_petites {
