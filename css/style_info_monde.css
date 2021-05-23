@@ -114,12 +114,12 @@ h1 {
     position: fixed;
     top: 9.3vw;
     left: 1.2vw;
-    width: 20vw;
+    height: 2vw;
     border-radius: 10px;
     border: 2px solid white;
     padding: 1vw;
     color: white;
-    font-size: 5vw;
+    font-size: 2.5vw;
 }
 
 /* ///////////////////////////////////// */
